@@ -1,9 +1,9 @@
 # projectmem - CyberObsidianCore
 
-_Last updated: 2026-11-09_
+_Last updated: 2026-11-13_
 
 ## Project purpose
-Replace this placeholder with a concise description of what this project does, who it serves, and the main technologies or runtime assumptions.
+Десктопный мультимедийный и файловый комбайн на Python (PySide6) с интерфейсом в стиле киберпанк.
 
 ## Recent issues
 - [OPEN] #0006 _download_file writes straight to dest; aborted download leaves broken exe/ggml-base.bin treated as installed [core_engine.py:556] (open)

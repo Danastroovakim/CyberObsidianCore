@@ -51,6 +51,7 @@ graphify-out/cache/
 *.swp
 *.swo
 *~
+*.lnk
 
 # Operating System files
 .DS_Store

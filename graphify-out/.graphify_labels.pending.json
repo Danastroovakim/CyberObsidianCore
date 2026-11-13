@@ -4,11 +4,11 @@
   "2": "UltimateDownloaderModule",
   "3": "BootstrapperDialog",
   "4": "FramelessTitleBar",
-  "5": "resolve_tool",
+  "5": "LocalAILabModule",
   "6": "MediaStudioModule",
-  "7": "LocalAILabModule",
+  "7": "QFrame",
   "8": "UniversalConverterModule",
   "9": "AsyncTaskWorker",
   "10": "HoloCard",
-  "11": "QFrame"
+  "11": "QIcon"
 }

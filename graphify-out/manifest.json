@@ -1,8 +1,8 @@
 {
   "core_engine.py": {
-    "mtime": 1794240244.41276,
-    "seen": 1794240279.3680096,
-    "ast_hash": "eefc51c8e554e10ba4c70d3689f51c28",
+    "mtime": 1794610166.9457083,
+    "seen": 1794613139.2353492,
+    "ast_hash": "90a8dd57a4ce8fe9f83fb02efce98942",
     "semantic_hash": ""
   },
   "deploy_and_build.py": {
@@ -12,80 +12,80 @@
     "semantic_hash": "f8ae892e77b1dafde957899667c5255e"
   },
   "main.py": {
-    "mtime": 1794240232.6935754,
-    "seen": 1794240279.3680232,
-    "ast_hash": "8af7811be515d420e1112e4166f24a79",
+    "mtime": 1794240991.0219522,
+    "seen": 1794613139.2353594,
+    "ast_hash": "d14ac8a1e9943e95d999e4208bac641b",
     "semantic_hash": ""
   },
   "mod_ai_lab.py": {
-    "mtime": 1793290505.6506674,
-    "seen": 1794238513.648371,
-    "ast_hash": "14872e2a91054f0bbf892bbbdab93c1a",
-    "semantic_hash": "14872e2a91054f0bbf892bbbdab93c1a"
+    "mtime": 1794610196.5381577,
+    "seen": 1794613139.2353616,
+    "ast_hash": "3bbb91cf3a9be1c62c1a505c9ea45a26",
+    "semantic_hash": ""
   },
   "mod_converter.py": {
-    "mtime": 1794240228.6515074,
-    "seen": 1794240279.3680303,
-    "ast_hash": "897be509a5e02afe787cc3f015c8bcd6",
+    "mtime": 1794598736.7488084,
+    "seen": 1794613139.235363,
+    "ast_hash": "03af94f61d9a5a0fe17a3e84dc19c40f",
     "semantic_hash": ""
   },
   "mod_downloader.py": {
-    "mtime": 1794240229.901211,
-    "seen": 1794240279.3680325,
-    "ast_hash": "366488a388eba50a9b136422d6009b84",
+    "mtime": 1794598938.0621755,
+    "seen": 1794613139.2353647,
+    "ast_hash": "2a7631dc65b8cbefdc595da7c5397f41",
     "semantic_hash": ""
   },
   "mod_studio.py": {
-    "mtime": 1793295234.043787,
-    "seen": 1794238513.6483757,
-    "ast_hash": "be04e882104b18084b13f1665817f976",
-    "semantic_hash": "be04e882104b18084b13f1665817f976"
+    "mtime": 1794598886.1414204,
+    "seen": 1794613139.2353659,
+    "ast_hash": "ac1010e97cd97bfce2c31823896e5c95",
+    "semantic_hash": ""
   },
   "ui_cyber_widgets.py": {
-    "mtime": 1793295162.201782,
-    "seen": 1794238513.6483772,
-    "ast_hash": "d4b2ed7942ca2f291965b0fa39b08d3d",
-    "semantic_hash": "d4b2ed7942ca2f291965b0fa39b08d3d"
+    "mtime": 1794240991.200488,
+    "seen": 1794613139.2353675,
+    "ast_hash": "1c504d8ca1f1d41ecfdd412ce9982ab4",
+    "semantic_hash": ""
   },
   ".projectmem/PROJECT_MAP.md": {
-    "mtime": 1794239909.779977,
-    "seen": 1794240279.3680418,
-    "ast_hash": "d61a93d95feb714fb2fe4f217ef332ec",
+    "mtime": 1794613094.4482493,
+    "seen": 1794613139.2353687,
+    "ast_hash": "24b4538213d1f427146d9b6d99c527b5",
     "semantic_hash": ""
   },
   ".projectmem/issues/0001-ui-thread-blocked-resolve-tool-os-walk-ffprobe-t.md": {
-    "mtime": 1794240270.92909,
-    "seen": 1794240279.3680449,
+    "mtime": 1794613094.7103012,
+    "seen": 1794613139.2353706,
     "ast_hash": "ab55230dea6d922f513ed95ef7e0def0",
     "semantic_hash": ""
   },
   ".projectmem/issues/0002-no-closeevent-worker-deletelater-on-task-finishe.md": {
-    "mtime": 1794240270.9295936,
-    "seen": 1794240279.368047,
+    "mtime": 1794613094.7103012,
+    "seen": 1794613139.2353725,
     "ast_hash": "65eb8d201c27097881e1c3c378c9a493",
     "semantic_hash": ""
   },
   ".projectmem/issues/0003-cancel-broken-between-step-cancel-reports-succes.md": {
-    "mtime": 1794240270.9296043,
-    "seen": 1794240279.3680491,
+    "mtime": 1794613094.711302,
+    "seen": 1794613139.2353747,
     "ast_hash": "5cef7e73051a503f6d3370b547688b9d",
     "semantic_hash": ""
   },
   ".projectmem/issues/0004-security-portable-zip-bundles-bin-incl-obsidian.md": {
-    "mtime": 1794240270.9301126,
-    "seen": 1794240279.368051,
+    "mtime": 1794613094.7123027,
+    "seen": 1794613139.2353764,
     "ast_hash": "5c1e2b234d6ed544e68489cd6ce3473e",
     "semantic_hash": ""
   },
   ".projectmem/issues/0005-detect-gpu-encoders-checks-compiled-in-encoders.md": {
-    "mtime": 1794240270.9301126,
-    "seen": 1794240279.3680525,
+    "mtime": 1794613094.7123027,
+    "seen": 1794613139.235378,
     "ast_hash": "5722fc5b3dac8f73c0384e6f98975d72",
     "semantic_hash": ""
   },
   ".projectmem/issues/0006-download-file-writes-straight-to-dest-aborted-do.md": {
-    "mtime": 1794240270.93111,
-    "seen": 1794240279.3680549,
+    "mtime": 1794613094.7133038,
+    "seen": 1794613139.2353797,
     "ast_hash": "2c44c94765108ae9ead37b9ff1400976",
     "semantic_hash": ""
   },
@@ -96,9 +96,21 @@
     "semantic_hash": ""
   },
   ".projectmem/summary.md": {
-    "mtime": 1794240270.928578,
-    "seen": 1794240279.368058,
-    "ast_hash": "bdea88f792cab25319a5d2bf3226b441",
+    "mtime": 1794613094.7093,
+    "seen": 1794613139.2353833,
+    "ast_hash": "d8e4a3a16b0428b721afe0b97b55e495",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794600706.07996,
+    "seen": 1794613139.2353852,
+    "ast_hash": "53ac07c582c9379f91785e49f505a1d7",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1794600697.9787366,
+    "seen": 1794613139.2353868,
+    "ast_hash": "196dbba9893f162ffe49441a941d70ba",
     "semantic_hash": ""
   }
 }

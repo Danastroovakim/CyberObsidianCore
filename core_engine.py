@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-core_engine.py — Системное ядро Cyber-Obsidian Media & Document Core v5.3.
-Исправлено:
-- Сохранение подпапки models/ при распаковке Real-ESRGAN + автолечение уже распакованных моделей
-- Быстрое блочное чтение stdout с автоопределением кодировки (UTF-8 / Windows ACP cp1251) без битых символов
-- Честный Self-Test на ошибки DLL (0xC0000135 и др.) и наличие весов models/
-- Парсинг прогресса Real-ESRGAN (-v)
+core_engine.py — Системное ядро Cyber-Obsidian Media & Document Core v5.4.
+Добавлена поддержка Upscayl-NCNN (upscayl-bin.exe) для кастомных моделей (4x-AnimeSharp, 4x-UltraSharp).
 """
 
 import os
@@ -96,9 +92,8 @@ def get_bin_dir() -> str:
 
 def heal_realesrgan_models(bin_dir: Optional[str] = None):
     """
-    Переносит файлы моделей Real-ESRGAN (.param и парные/realesr* .bin) из корня ./bin
-    в подпапку ./bin/models, если раньше архив был распакован без подпапки.
-    Не затрагивает ggml-*.bin (модели Whisper).
+    Переносит файлы моделей (.param и парные/realesr* .bin) из корня ./bin
+    в подпапку ./bin/models, не затрагивая ggml-*.bin (модели Whisper).
     """
     if not bin_dir:
         bin_dir = get_bin_dir()
@@ -366,6 +361,18 @@ TOOL_REGISTRY: Dict[str, Dict[str, str]] = {
         "builtin_fallback": "false",
         "desc": "ИИ-апскейл картинок и видео 4x на видеокарте",
     },
+    "upscayl-bin": {
+        "name": "Upscayl-NCNN Engine",
+        "exe": "upscayl-bin.exe",
+        "winget_id": "",
+        "github_repo": "upscayl/upscayl-ncnn",
+        "github_asset_keyword": "windows.zip",
+        "direct_url": "https://github.com/upscayl/upscayl-ncnn/releases/download/20251207-174704/upscayl-bin-20251207-174704-windows.zip",
+        "size_hint": "~2.3 МБ (Для AnimeSharp / UltraSharp)",
+        "fast_portable": "true",
+        "builtin_fallback": "false",
+        "desc": "Движок Vulkan для кастомных моделей 4x-AnimeSharp и 4x-UltraSharp",
+    },
 }
 
 WILDCARD_WINDOWS_PATTERNS = [
@@ -388,7 +395,7 @@ def resolve_github_asset_url(repo: str, keyword: str, fallback_url: str = "") ->
         req = urllib.request.Request(
             api_url,
             headers={
-                "User-Agent": "CyberObsidianCore/5.3",
+                "User-Agent": "CyberObsidianCore/5.4",
                 "Accept": "application/vnd.github+json",
             },
         )
@@ -444,7 +451,7 @@ def copy_tool_with_companions(src_exe: str, bin_dir: str):
 def resolve_tool(tool_key: str) -> Optional[str]:
     bin_dir = get_bin_dir()
     _heal_7zip_in_bin(bin_dir)
-    if tool_key == "realesrgan-ncnn-vulkan":
+    if tool_key in ("realesrgan-ncnn-vulkan", "upscayl-bin"):
         heal_realesrgan_models(bin_dir)
 
     info = TOOL_REGISTRY.get(tool_key, {})
@@ -522,6 +529,7 @@ def verify_tool_works(tool_key: str) -> Tuple[bool, str]:
         "tesseract": ["--version"],
         "whisper-cli": ["-h"],
         "realesrgan-ncnn-vulkan": ["-h"],
+        "upscayl-bin": ["-h"],
         "magick": ["-version"],
         "soffice": ["--version"],
     }.get(tool_key, ["--version"])
@@ -606,7 +614,7 @@ class AutoBootstrapperThread(QThread):
                 pass
 
     def _download_file(self, url: str, dest: str, label: str):
-        req = urllib.request.Request(url, headers={"User-Agent": "CyberObsidianCore/5.3"})
+        req = urllib.request.Request(url, headers={"User-Agent": "CyberObsidianCore/5.4"})
         with urllib.request.urlopen(req, timeout=30) as response, open(dest, "wb") as out_file:
             total = int(response.info().get("Content-Length", 0) or 0)
             downloaded = 0
@@ -687,7 +695,7 @@ class AutoBootstrapperThread(QThread):
 
                 is_model_asset = (
                     "/models/" in f"/{norm_member.lower()}"
-                    or (tool_key == "realesrgan-ncnn-vulkan" and low_name.endswith((".bin", ".param")))
+                    or (tool_key in ("realesrgan-ncnn-vulkan", "upscayl-bin") and low_name.endswith((".bin", ".param")))
                 )
                 if is_model_asset:
                     os.makedirs(models_dir, exist_ok=True)
