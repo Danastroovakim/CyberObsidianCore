@@ -1,0 +1,8 @@
+﻿__pycache__/
+bin/
+build/
+dist/
+test/
+*.exe
+*.spec
+*.ico

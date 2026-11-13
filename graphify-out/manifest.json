@@ -1,0 +1,104 @@
+{
+  "core_engine.py": {
+    "mtime": 1794240244.41276,
+    "seen": 1794240279.3680096,
+    "ast_hash": "eefc51c8e554e10ba4c70d3689f51c28",
+    "semantic_hash": ""
+  },
+  "deploy_and_build.py": {
+    "mtime": 1793292153.674989,
+    "seen": 1794238513.6483667,
+    "ast_hash": "f8ae892e77b1dafde957899667c5255e",
+    "semantic_hash": "f8ae892e77b1dafde957899667c5255e"
+  },
+  "main.py": {
+    "mtime": 1794240232.6935754,
+    "seen": 1794240279.3680232,
+    "ast_hash": "8af7811be515d420e1112e4166f24a79",
+    "semantic_hash": ""
+  },
+  "mod_ai_lab.py": {
+    "mtime": 1793290505.6506674,
+    "seen": 1794238513.648371,
+    "ast_hash": "14872e2a91054f0bbf892bbbdab93c1a",
+    "semantic_hash": "14872e2a91054f0bbf892bbbdab93c1a"
+  },
+  "mod_converter.py": {
+    "mtime": 1794240228.6515074,
+    "seen": 1794240279.3680303,
+    "ast_hash": "897be509a5e02afe787cc3f015c8bcd6",
+    "semantic_hash": ""
+  },
+  "mod_downloader.py": {
+    "mtime": 1794240229.901211,
+    "seen": 1794240279.3680325,
+    "ast_hash": "366488a388eba50a9b136422d6009b84",
+    "semantic_hash": ""
+  },
+  "mod_studio.py": {
+    "mtime": 1793295234.043787,
+    "seen": 1794238513.6483757,
+    "ast_hash": "be04e882104b18084b13f1665817f976",
+    "semantic_hash": "be04e882104b18084b13f1665817f976"
+  },
+  "ui_cyber_widgets.py": {
+    "mtime": 1793295162.201782,
+    "seen": 1794238513.6483772,
+    "ast_hash": "d4b2ed7942ca2f291965b0fa39b08d3d",
+    "semantic_hash": "d4b2ed7942ca2f291965b0fa39b08d3d"
+  },
+  ".projectmem/PROJECT_MAP.md": {
+    "mtime": 1794239909.779977,
+    "seen": 1794240279.3680418,
+    "ast_hash": "d61a93d95feb714fb2fe4f217ef332ec",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0001-ui-thread-blocked-resolve-tool-os-walk-ffprobe-t.md": {
+    "mtime": 1794240270.92909,
+    "seen": 1794240279.3680449,
+    "ast_hash": "ab55230dea6d922f513ed95ef7e0def0",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0002-no-closeevent-worker-deletelater-on-task-finishe.md": {
+    "mtime": 1794240270.9295936,
+    "seen": 1794240279.368047,
+    "ast_hash": "65eb8d201c27097881e1c3c378c9a493",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0003-cancel-broken-between-step-cancel-reports-succes.md": {
+    "mtime": 1794240270.9296043,
+    "seen": 1794240279.3680491,
+    "ast_hash": "5cef7e73051a503f6d3370b547688b9d",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0004-security-portable-zip-bundles-bin-incl-obsidian.md": {
+    "mtime": 1794240270.9301126,
+    "seen": 1794240279.368051,
+    "ast_hash": "5c1e2b234d6ed544e68489cd6ce3473e",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0005-detect-gpu-encoders-checks-compiled-in-encoders.md": {
+    "mtime": 1794240270.9301126,
+    "seen": 1794240279.3680525,
+    "ast_hash": "5722fc5b3dac8f73c0384e6f98975d72",
+    "semantic_hash": ""
+  },
+  ".projectmem/issues/0006-download-file-writes-straight-to-dest-aborted-do.md": {
+    "mtime": 1794240270.93111,
+    "seen": 1794240279.3680549,
+    "ast_hash": "2c44c94765108ae9ead37b9ff1400976",
+    "semantic_hash": ""
+  },
+  ".projectmem/plan.md": {
+    "mtime": 1794238605.3417034,
+    "seen": 1794240279.3680563,
+    "ast_hash": "0ad951f474f67c79baca75d92237b1c4",
+    "semantic_hash": ""
+  },
+  ".projectmem/summary.md": {
+    "mtime": 1794240270.928578,
+    "seen": 1794240279.368058,
+    "ast_hash": "bdea88f792cab25319a5d2bf3226b441",
+    "semantic_hash": ""
+  }
+}

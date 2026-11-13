@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller & Build artifacts
+build/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Binaries & external CLI tools
+/bin/
+*.bin
+*.zip
+*.tar.*
+*.7z
+
+# Sensitive data & cookies
+*cookies*.txt
+*.env
+*.env.*
+*.key
+*.pem
+
+# Test & sample media files
+/test/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Project memory runtime / dynamic files
+.projectmem/events.jsonl
+.projectmem/watch.pid
+.projectmem/watch.log
+.projectmem/structure.json
+
+# Graphify caches
+graphify-out/cache/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
